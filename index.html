@@ -11,7 +11,7 @@
 <meta property="og:type" content="website">
 <meta property="og:title" content="Emre & Yasemin — Nişan Davetiyesi">
 <meta property="og:description" content="5 Eylül 2026 · Saat 13:00 · Nevizade Ankara. Sizleri de aramızda görmekten mutluluk duyarız.">
-<meta property="og:image" content="assets/invitation-card.jpg">
+<meta property="og:image" content="davetiye-kartı.jpg">
 <meta name="twitter:card" content="summary_large_image">
 
 <!-- ============ FAVICON (inline SVG, harici dosya yok) ============ -->
@@ -93,7 +93,7 @@ section{position:relative;z-index:2;padding:clamp(56px,11vw,92px) 20px}
 @media(min-width:720px){.bg-frame{inset:22px}.bg-frame::after{inset:8px}}
 
 .bg-vine{position:fixed;top:0;bottom:0;width:clamp(46px,10vw,104px);z-index:0;pointer-events:none;
-  background-image:url('assets/vine.jpg');background-repeat:repeat-y;background-size:100% auto;
+  background-image:url('asma.jpg');background-repeat:repeat-y;background-size:100% auto;
   opacity:.85;mix-blend-mode:multiply}
 .bg-vine.left{left:0}
 .bg-vine.right{right:0;transform:scaleX(-1)}
@@ -220,7 +220,7 @@ body{animation:pageIn .5s ease both}
 
 <!-- ============ HERO ============ -->
 <header class="hero">
-  <img class="hero-flower" src="assets/top-flower.jpg" alt="" aria-hidden="true">
+  <img class="hero-flower" src="top-flower.jpg" alt="" aria-hidden="true">
   <p class="eyebrow">Nişan Davetiyesi</p>
   <div class="divider" aria-hidden="true"><i></i><svg><use href="#i-rose"/></svg><i></i></div>
   <h1 class="script names">Emre<span class="amp">&amp;</span>Yasemin</h1>
@@ -292,7 +292,7 @@ body{animation:pageIn .5s ease both}
 
 <!-- ============ FOOTER ============ -->
 <footer>
-  <img class="footer-bench" src="assets/bench-lamp.jpg" alt="" aria-hidden="true">
+  <img class="footer-bench" src="bank-lambası.jpg" alt="" aria-hidden="true">
   <div class="divider" aria-hidden="true"><i></i><svg><use href="#i-leaf"/></svg><i></i></div>
   <p class="script names">Emre &amp; Yasemin</p>
   <p class="sec-sub">Sizi de bu güzel günde bekliyoruz</p>
@@ -316,11 +316,11 @@ const CONFIG = {
   siteUrl: "https://emreveyasemin.github.io/nisan.davetiyesi/",
 
   // Davetiyenin kendisi — "Hikayene Ekle" butonu bu görseli birebir paylaşır.
-  invitationImageUrl: "assets/invitation-card.jpg",
+  invitationImageUrl: "davetiye-kartı.jpg",
 
   // Arka plan müziği — assets klasörüne mp3 dosyasını koyup dosya adını buraya yazın.
-  // Pixabay'den indirdiğiniz dosyayı "assets/dugun-muzigi.mp3" olarak kaydedin.
-  backgroundMusicUrl: "assets/dugun-muzigi.mp3",
+  // Pixabay'den indirdiğiniz dosyayı "dugun-muzigi.mp3" olarak kaydedin.
+  backgroundMusicUrl: "dugun-muzigi.mp3",
   backgroundMusicVolume: 0.16
 };
 /* ========================================================================== */
@@ -691,7 +691,7 @@ function qrEncode(text){
   document.addEventListener("click", tryPlay, { passive: true });
   document.addEventListener("scroll", tryPlay, { passive: true, once: true });
   tryPlay();
-  audio.addEventListener("error", () => console.log("Arka plan müziği yüklenemedi (assets/dugun-muzigi.mp3 dosyasını eklemeyi unutmayın)."));
+  audio.addEventListener("error", () => console.log("Arka plan müziği yüklenemedi (dugun-muzigi.mp3 dosyasını eklemeyi unutmayın)."));
 })();
 </script>
 </body>
